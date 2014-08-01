@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@color/White"
+	android:layout_weight="1" >
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/White"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/Red"
+        android:gravity="center"
+        android:text="@string/filter_search"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/White" />
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:layout_below="@+id/header" >
+
+        <TableRow
+            android:id="@+id/ApparelRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp" >
+
+                <Button
+                    android:id="@+id/Button1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_advanced_next"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/linearlayout5"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="left|center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Apparel"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/DarkGrey2" />
+
+                    <TextView
+                        android:id="@+id/apparelList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Selections"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/Red"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </RelativeLayout>
+        </TableRow>
+
+        <ImageView
+            android:id="@+id/line_divider2"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/Grey" />
+
+        <TableRow
+            android:id="@+id/ElectronicsRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp" >
+
+                <LinearLayout
+                    android:id="@+id/linearlayout3"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="left|center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Electronics"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/DarkGrey2" />
+
+                    <TextView
+                        android:id="@+id/electronicsSelectedList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Selections"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/Red"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/Button3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_advanced_next" />
+            </RelativeLayout>
+        </TableRow>
+
+        <ImageView
+            android:id="@+id/line_divider3"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/Grey" />
+
+        <TableRow
+            android:id="@+id/EntertainmentRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp" >
+
+                <LinearLayout
+                    android:id="@+id/linearlayout4"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="left|center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Entertainment"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/DarkGrey2" />
+
+                    <TextView
+                        android:id="@+id/entertainmentSelectedList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Selections"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/Red"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/Button1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_advanced_next" />
+            </RelativeLayout>
+        </TableRow>
+
+        <ImageView
+            android:id="@+id/line_divider4"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/Grey" />
+
+        <TableRow
+            android:id="@+id/FoodRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp">
+
+                <LinearLayout
+                    android:id="@+id/linearlayout6"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="left|center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/food"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/DarkGrey2" />
+
+                    <TextView
+                        android:id="@+id/foodSelectedList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Selections"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/Red"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/Button5"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_advanced_next" />
+            </RelativeLayout>
+        </TableRow>
+
+        <ImageView
+            android:id="@+id/line_divider6"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/Grey" />
+
+        <TableRow
+            android:id="@+id/HealthRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp">
+
+                <LinearLayout
+                    android:id="@+id/linearlayout7"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="left|center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/health"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/DarkGrey2" />
+
+                    <TextView
+                        android:id="@+id/healthSelectedList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Selections"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/Red"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/Button6"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"
+                    android:background="@drawable/icon_advanced_next" />
+            </RelativeLayout>
+        </TableRow>
+
+        <ImageView
+            android:id="@+id/line_divider6"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/Grey" />
+        
+        <TableRow
+            android:id="@+id/HomeRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp">
+
+                <LinearLayout
+                    android:id="@+id/linearlayout8"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="left|center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Home"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/DarkGrey2" />
+
+                    <TextView
+                        android:id="@+id/homeSelectedList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Selections"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/Red"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/Button8"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"
+                    android:background="@drawable/icon_advanced_next" />
+            </RelativeLayout>
+        </TableRow>
+
+        <ImageView
+            android:id="@+id/line_divider8"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/Grey" />
+        
+        <TableRow
+            android:id="@+id/ServiceRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp">
+
+                <LinearLayout
+                    android:id="@+id/linearlayout9"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="left|center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Service"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/DarkGrey2" />
+
+                    <TextView
+                        android:id="@+id/serviceSelectedList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Selections"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/Red"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/Button9"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_advanced_next" />
+            </RelativeLayout>
+        </TableRow>
+
+        <ImageView
+            android:id="@+id/line_divider9"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/Grey" />
+        
+        
+         <TableRow
+            android:id="@+id/NeighbourhoodRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/NeighbourhoodLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp" >
+
+                <LinearLayout
+                    android:id="@+id/linearlayout10"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="left|center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Neighbourhood"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/DarkGrey2" />
+
+                    <TextView
+                        android:id="@+id/NeighbourhoodselectedList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Selections"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/Red"
+                        android:visibility="gone"
+                     />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/Neighbourhood_arrow"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_advanced_next"
+                    android:onClick="clickCuisine" />
+
+            </RelativeLayout>
+        </TableRow>
+        
+         <ImageView
+            android:id="@+id/line_divider12"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/Grey" />
+        
+        <TableRow
+            android:id="@+id/SortByRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp" >
+
+                <LinearLayout
+                    android:id="@+id/linearlayout10"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="left|center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sort By"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/DarkGrey2" />
+
+                    <TextView
+                        android:id="@+id/sortBySelectedList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Selections"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/Red"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/Button10"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_advanced_next" />
+            </RelativeLayout>
+        </TableRow>
+
+        <ImageView
+            android:id="@+id/line_divider8"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/Grey" />
+    </TableLayout>
+	
+	<RelativeLayout
+	    android:layout_below ="@+id/tableLayout1"
+	    android:id="@+id/test"
+	    android:layout_width="match_parent"
+	    android:layout_height="100dp"  
+	    android:orientation="vertical">
+
+	    <Button
+	        android:id="@+id/button2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/search_button"
+	        android:textColor="@color/White"
+	        android:onClick="searchRetailClicked" />
+
+	 </RelativeLayout>
+
+</RelativeLayout>
+</ScrollView>

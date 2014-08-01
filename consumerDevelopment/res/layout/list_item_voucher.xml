@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/drop_shadow_shape"
+    android:orientation="horizontal">
+    
+
+    <!-- ListRow Left side Thumbnail image -->
+	
+    <LinearLayout
+        android:padding="10dp"
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true">
+
+        <ImageView
+            android:contentDescription="@string/desc"    
+            android:id="@+id/voucherImage"
+            android:layout_width="54dip"
+            android:layout_height="54dp"
+            android:src="@drawable/logo_placeholder" />
+    </LinearLayout>
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/middleLayout"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/thumbnail"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        
+        android:layout_marginRight="0dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/voucherShopName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/one"
+            android:textColor="@color/Black"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/voucherPromotion"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+            android:text="@string/nine"
+            android:textColor="@color/Red"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+	<LinearLayout
+	    android:id="@+id/test"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/middleLayout"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignTop="@+id/middleLayout"
+	    android:layout_toRightOf="@+id/middleLayout"
+	    android:gravity="center"
+	    android:orientation="vertical" >
+         
+	    
+	    	<LinearLayout
+		        android:id="@+id/rightLayout2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical">
+		
+		        <TextView
+		            android:id="@+id/textView1"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="@string/qt"
+		            android:textSize="12dp"
+		            android:textColor="@color/DarkGrey"
+		            android:gravity="center_vertical" />
+
+		     </LinearLayout>
+		     
+		    <LinearLayout
+		        android:id="@+id/rightLayout"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical">
+		
+		        <TextView
+		            android:id="@+id/textView_tester"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:gravity="center_vertical"
+		            android:text="@string/h"
+		            android:textColor="@color/DarkGrey"
+		            android:textSize="30dp"/>
+		
+			</LinearLayout>
+		        
+		    
+	</LinearLayout>
+
+	<ImageView
+	   android:contentDescription="@string/desc"    
+	    android:id="@+id/line_divider"
+	    android:layout_width="1dip"
+	    android:layout_height="0dip"
+	    android:layout_alignBottom="@+id/test"
+	    android:layout_alignTop="@+id/test"
+	    android:layout_toLeftOf="@+id/test"
+	    android:background="@color/Grey" />
+
+</RelativeLayout>

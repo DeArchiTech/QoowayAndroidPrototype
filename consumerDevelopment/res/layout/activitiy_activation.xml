@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/signupScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LightGrey" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/LightGrey"
+        android:orientation="vertical"
+        android:paddingTop="10dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/activate" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="23dp"
+            android:text="@string/sixteen_digit_card" />
+
+        <EditText
+            android:id="@+id/sixteen_digit_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="@string/sixteen_digit"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:lines="1"
+            android:padding="5dp"
+            android:singleLine="true" />
+
+        <include
+            android:id="@+id/sign_up_form"
+            layout="@layout/fragment_sign_up_form" />
+    </LinearLayout>
+
+</ScrollView><!--
+android:background="@drawable/rounded_corners_white"
+
+	<LinearLayout
+	    android:id="@+id/bottom"
+	    android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:background="@color/LightGrey"
+    	android:orientation="vertical" 
+    	android:padding="1dp">
+        </LinearLayout>
+        
+	<EditText
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="top"
+        android:ems="10" 
+        android:padding="5dp"
+        android:lines="1"
+        android:hint="@string/postal"
+        android:visibility="invisible"
+        />         
+        
+
+	<EditText
+        android:id="@+id/genderText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="top"
+        android:ems="10" 
+        android:padding="5dp"
+        android:lines="1"
+        android:hint="@string/gender"
+        /> 
+        
+	<EditText
+        android:id="@+id/ageGroupText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="top"
+        android:ems="10" 
+        android:padding="5dp"
+        android:lines="1"
+        android:hint="@string/age_group"
+        /> 
+        
+	<EditText
+        android:id="@+id/referenceText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="top"
+        android:ems="10" 
+        android:padding="5dp"
+        android:lines="1"
+        android:hint="@string/reference"
+        /> 		
+
+	<EditText
+        android:id="@+id/provinceText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="top"
+        android:ems="10" 
+        android:padding="5dp"
+        android:lines="1"
+        android:background="@drawable/rounded_corners_white"
+        android:hint="@string/province"
+        /> 
+
+
+	<EditText
+        android:id="@+id/countryText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="top"
+        android:ems="10" 
+        android:padding="5dp"
+        android:lines="1"
+        android:background="@drawable/rounded_corners_white"
+        android:hint="@string/country"
+        />  
+-->

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/VouchersView"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" 
+	    android:layout_marginRight="5dp"
+	    android:layout_marginLeft="5dp"
+	    android:layout_marginTop="10dp"
+		android:paddingTop="5dp"
+    >
+    	<TextView
+    	    android:paddingTop="15dp"
+    	    android:paddingBottom="15dp"
+			android:background="@color/Red"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+
+			android:textColor="@color/White"
+			android:gravity="center"
+    	    android:text="@string/my_v"
+    	    android:textAppearance="?android:attr/textAppearanceSmall" />
+    	
+    	
+    	 <TextView
+    	    android:paddingTop="25dp"
+    	    android:paddingBottom="25dp"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+			
+			android:background="@color/White"
+			android:gravity="center"
+    	    android:text="@string/v_h"
+    	    android:textAppearance="?android:attr/textAppearanceSmall" />
+        
+    </LinearLayout>    
+    

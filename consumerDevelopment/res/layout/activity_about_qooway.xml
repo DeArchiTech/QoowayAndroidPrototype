@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:background="@color/BackGroundGrey"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/about_one_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/drop_shadow_shape"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/about_one_text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/what_is_Qooway_title"
+            android:textColor="@color/Black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/about_one_text_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/what_is_Qooway_text1"
+            android:textColor="@color/Black"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/about_one_text_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/what_is_Qooway_text2"
+            android:textColor="@color/Black"
+            android:textSize="14dp" />
+
+        <!--  kakao taking this box out don't need
+        <TextView
+            android:id="@+id/about_one_text_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/what_is_Qooway_text3"
+            android:textColor="@color/Black"
+            android:textSize="14dp" /> -->
+    </LinearLayout>
+
+</LinearLayout>

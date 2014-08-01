@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/Grey"
+    >
+    
+    <!-- kakao jungle godtier
+    	 size of all boxes modified & logo inserted into barcode box -->
+
+    <RelativeLayout
+        android:id="@+id/cardNumBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/drop_shadow_shape_redeem1"
+        android:orientation="vertical"
+        android:paddingBottom="25dp"
+        android:paddingTop="20dp"   >
+        
+        <ImageView 
+            android:id="@+id/logo0"
+            android:contentDescription="@string/desc"
+            android:layout_width="210dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:padding="0dp"
+            android:layout_marginBottom="0dp"
+            android:src="@drawable/android_logo" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:layout_below="@+id/logo0"
+            android:text="@string/qooway_num_message"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            android:layout_centerHorizontal="true"
+            />
+        
+		 <TextView
+	     	android:id="@+id/cardNum"
+	     	android:layout_width="wrap_content"
+	     	android:layout_height="wrap_content"
+	     	android:layout_below="@+id/textView1"
+		 	android:layout_centerHorizontal="true"
+	     	android:layout_marginTop="1dp"
+	     	android:text="Small Text"
+	     	android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	 	<ImageView
+	 	    android:padding="3dp"
+	 	    android:contentDescription="@string/desc"
+	    	android:layout_marginTop="10dp"
+	    	android:layout_marginBottom="5dp"
+	    	android:scaleType="centerCrop"
+	     	android:id="@+id/barcode"
+	     	android:layout_width="300dp"
+	     	android:layout_height="100dp"
+	     	android:layout_below="@+id/cardNum"
+	     	android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+    
+
+    <RelativeLayout
+        android:id="@+id/clickMyVouchers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="17dp"
+        android:paddingTop="17dp" 
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/drop_shadow_shape_redeem1"
+
+        >
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:text="@string/vouchers_message"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/vouchersCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_below="@+id/textView5"
+            android:layout_centerHorizontal="true"
+            />
+
+       	<ImageView
+       	    android:id="@+id/arrow2"
+       	    android:layout_width="wrap_content"
+       	    android:layout_height="wrap_content"
+       	    android:layout_alignParentRight="true"
+       	    android:layout_marginRight="15dp"
+       	    android:contentDescription="@string/desc"
+       	    android:src="@drawable/orange_arrow"
+       	    android:layout_centerVertical="true"
+       	    />
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/clickQooPointsHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="17dp"
+        android:paddingTop="17dp" 
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/drop_shadow_shape_redeem1"
+        >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:text="@string/qoopoints_message"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/qooPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            />
+         <ImageView
+       	    android:id="@+id/arrow3"
+       	    android:layout_width="wrap_content"
+       	    android:layout_height="wrap_content"
+       	    android:layout_alignParentRight="true"
+       	    android:layout_marginRight="15dp"
+       	    android:contentDescription="@string/desc"
+       	    android:src="@drawable/orange_arrow"
+       	    android:layout_centerVertical="true"
+       	    />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/enoughQoopoints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/drop_shadow_shape"
+         >
+        
+        <RelativeLayout 
+            android:id="@+id/enoughQoopointsBg"
+            android:layout_alignParentLeft="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/RedButton" >
+            
+            <TextView 
+                android:id="@+id/youHaveEnough"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_margin="15dp"
+                android:text="@string/you_have"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/White"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+            
+            <ImageView 
+		        android:id="@+id/arrow4"
+		        android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	       	    android:layout_marginRight="15dp"
+	            android:contentDescription="@string/desc"
+	            android:src="@drawable/white_arrow"
+	            android:layout_centerVertical="true" />
+            
+        </RelativeLayout>
+       
+    </RelativeLayout>
+</LinearLayout>
+
+<!--
+
+    <Button
+        android:id="@+id/readbutton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/read" />
+ 
+android:clickable="true"
+android:onClick="clickQooPointsHistory"
+
+        android:clickable="true"
+    	android:onClick="clickMyVouchers"
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/DarkGrayTwo"
+        android:orientation="vertical" >
+    </LinearLayout>
+    
+    
+	    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/DarkGrayTwo"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+	        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="250dp"
+            android:layout_height="78dp"
+            android:src="@drawable/temp_barcode" 
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/cardNum"
+            android:contentDescription="@string/desc"
+            />
+
+
+ -->

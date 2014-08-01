@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/Grey"
+    >
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Grey"
+    android:orientation="vertical" 
+    android:paddingBottom="10dp"
+    >
+	
+        <!-- Editext for Search -->
+    <EditText android:id="@+id/inputSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/search_merchant_message"
+        android:inputType="textVisiblePassword"
+        android:background="@drawable/rounded_corners"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/Black"
+        android:drawableLeft="@drawable/search_inactive"
+        android:drawablePadding="15dp"
+        android:ellipsize="end"
+        android:paddingLeft="15dp"
+        android:paddingRight="60dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:imeOptions="actionDone"        
+        style="@android:style/TextAppearance.Medium"  
+       />
+        
+  
+
+    
+    <TextView 
+        android:id="@+id/textView1"
+        android:gravity="left"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@android:style/TextAppearance.Small"
+        android:text="@string/step1"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="0dp"
+        android:layout_below="@+id/inputSearch"
+        android:textColor="@color/DarkGrey2"
+        />
+    
+	<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/Grey"
+    android:layout_below="@+id/textView1"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="5dp"
+    android:gravity="center"
+    >
+	   
+	   
+
+    
+        <ImageButton
+            android:id="@+id/restaurantsView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+        	android:layout_marginRight="6dp"
+        	android:layout_marginLeft="6dp"
+        	android:layout_marginBottom="9dp"
+            android:background="@drawable/search_advanced_restaurants" 
+            android:contentDescription="@string/desc"
+            />
+
+        <ImageButton
+            android:id="@+id/retailView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/search_advanced_retailandservices"
+            android:contentDescription="@string/desc" />
+    
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>
+

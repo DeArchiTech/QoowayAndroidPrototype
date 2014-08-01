@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qooway.consumerv01"
+    android:versionCode="10"
+    android:versionName="1.07" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.qooway.consumerv01.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.qooway.consumerv01.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <!-- Include next permission if you want to allow UIL to cache images on SD card -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name="ui.UILApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/beta"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <receiver
+            android:name="framework.GooglePlay.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.qooway.consumerv01" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="framework.GooglePlay.GcmIntentService" />
+
+        <activity
+            android:name="ui.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ui.MainScreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnchanged|adjustPan" >
+            <intent-filter>
+                <action android:name="com.qooway.consumerv01.CLEARSCREEN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ui.advanced_search.AdvancedRestaurantSearchActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.qooway.consumerv01.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.qooway.consumerv01.MainActivity" />
+
+            <intent-filter>
+                <action android:name="com.scytec.datamobile.vd.gui.android.AppPreferenceActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ui.newSearch.SearchListActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.qooway.consumerv01.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.qooway.consumerv01.MainActivity" />
+
+            <intent-filter>
+                <action android:name="com.scytec.datamobile.vd.gui.android.AppPreferenceActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ui.newSearch.CategorySearchListActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.qooway.consumerv01.SearchListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.qooway.consumerv01.SearchListActivity" />
+
+            <intent-filter>
+                <action android:name="com.scytec.datamobile.vd.gui.android.AppPreferenceActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ui.advanced_search.SelectedRestaurantActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.qooway.consumerv01.SearchListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.qooway.consumerv01.SearchListActivity" />
+
+            <intent-filter>
+                <action android:name="com.scytec.datamobile.vd.gui.android.AppPreferenceActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ui.SearchBarActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.qooway.consumerv01.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.qooway.consumerv01.MainActivity" />
+
+            <intent-filter>
+                <action android:name="com.scytec.datamobile.vd.gui.android.AppPreferenceActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ui.voucher.MyVoucherActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.qooway.consumerv01.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.qooway.consumerv01.MainActivity" />
+
+            <intent-filter>
+                <action android:name="com.scytec.datamobile.vd.gui.android.AppPreferenceActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ui.RedeemPointsActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.qooway.consumerv01.MainScreenActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.qooway.consumerv01.MainActivity" />
+
+            <intent-filter>
+                <action android:name="com.scytec.datamobile.vd.gui.android.AppPreferenceActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ui.QooPointsHistoryActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.qooway.consumerv01.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.qooway.consumerv01.MainActivity" />
+
+            <intent-filter>
+                <action android:name="com.scytec.datamobile.vd.gui.android.AppPreferenceActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ui.advanced_search.RestaurantListActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.qooway.consumerv01.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.qooway.consumerv01.MainActivity" />
+
+            <intent-filter>
+                <action android:name="com.scytec.datamobile.vd.gui.android.AppPreferenceActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ui.advanced_search.RetailListActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.qooway.consumerv01.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.qooway.consumerv01.MainActivity" />
+
+            <intent-filter>
+                <action android:name="com.scytec.datamobile.vd.gui.android.AppPreferenceActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ui.advanced_search.AdvancedRetailSearchActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.qooway.consumerv01.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.qooway.consumerv01.MainActivity" />
+
+            <intent-filter>
+                <action android:name="com.scytec.datamobile.vd.gui.android.AppPreferenceActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ui.WriteReviewActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.qooway.consumerv01.MerchantDetailActivity" >
+            <intent-filter>
+                <action android:name="com.scytec.datamobile.vd.gui.android.AppPreferenceActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.qooway.consumerv01.MainScreenActivity" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ui.CheckInActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.qooway.consumerv01.ui.MainScreenActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.qooway.consumerv01.MainActivity" />
+
+            <intent-filter>
+                <action android:name="com.scytec.datamobile.vd.gui.android.AppPreferenceActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ui.ForgotPasswordActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.qooway.consumerv01.MainScreenActivity" >
+        </activity>
+        <activity
+            android:name="ui.MerchantDetailActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="ui.MerchantMapActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.qooway.consumerv01.MerchantDetailActivity" >
+        </activity>
+        <activity
+            android:name="ui.TermsActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.qooway.consumerv01.MainScreenActivity" >
+        </activity>
+        <activity
+            android:name="ui.WhatIsQoowayActivity"
+            android:label="@string/app_name"
+                   android:parentActivityName="com.qooway.consumerv01.MainScreenActivity" >
+        </activity>
+        <activity
+            android:name="ui.HowDoIGetInstantDealsActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.qooway.consumerv01.MainScreenActivity" >
+        </activity>
+        <activity
+            android:name="ui.HowDoIredeemQooPointsActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.qooway.consumerv01.MainScreenActivity" >
+        </activity>
+        <activity
+            android:name="ui.ActivateActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.qooway.consumerv01.MainScreenActivity" >
+        </activity>
+		<activity
+            android:name="ui.SignUpActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.qooway.consumerv01.MainScreenActivity" >
+        </activity>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCHGncI1CZrXiMpphPacV4fPCmnSIj-nt0" />
+
+        <!-- Release Key AIzaSyC1TckHL2TniWBqOnkQBgKq0DvaHsp8NkA -->
+
+
+        <!-- DAVID DEBUG KEYSTORE AIzaSyCHGncI1CZrXiMpphPacV4fPCmnSIj-nt0 -->
+        <meta-data
+            android:name="com.crashlytics.ApiKey"
+            android:value="467b70c5160cb22766e9b96faec5347e4ce9f746" />
+    </application>
+
+</manifest>

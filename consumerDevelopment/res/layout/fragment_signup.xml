@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/signupScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LightGrey" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/LightGrey"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+        
+        <!-- intro + sign-up -->
+        
+        <RelativeLayout
+            android:id="@+id/want_instant_deal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/sign_up_view"
+            android:layout_alignRight="@+id/sign_up_view" >
+
+        	<TextView
+            	android:id="@+id/want_instant_deal_title_view"
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:paddingTop="30dp"
+            	android:text="@string/want_instant_deals_title"
+            	android:textSize="18dp"
+            	android:textStyle="bold" />
+
+        	<TextView
+            	android:id="@+id/want_instant_deal_text_view"
+            	android:layout_below="@+id/want_instant_deal_title_view"
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:textSize="18dp"
+            	android:text="@string/want_instant_deals_text" />
+        
+        </RelativeLayout>
+        
+        <ImageView
+            android:id="@+id/sign_up_view"
+            android:layout_below="@+id/want_instant_deal"
+            android:contentDescription="@string/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:src="@drawable/signup_button" />
+        
+        <!-- get rewards + activate card -->
+        
+        <RelativeLayout
+            android:id="@+id/got_a_qooway_rewards"
+            android:layout_below="@+id/sign_up_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/sign_up_view"
+            android:layout_alignRight="@+id/sign_up_view" >
+
+        	<TextView
+        	    android:id="@+id/got_a_qooway_rewards_title_view"
+        	    android:layout_width="match_parent"
+        	    android:layout_height="wrap_content"
+        	    android:paddingTop="30dp"
+        	    android:text="@string/got_a_qooway_rewards_title"
+        	    android:textSize="18dp"
+            	android:textStyle="bold" />
+
+        	<TextView
+            	android:id="@+id/got_a_qooway_rewards_text_view"
+            	android:layout_below="@+id/got_a_qooway_rewards_title_view"
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:textSize="18dp"
+            	android:text="@string/got_a_qooway_rewards_text" />
+        
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/activate_card_view"
+            android:layout_below="@+id/got_a_qooway_rewards"
+            android:contentDescription="@string/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:src="@drawable/activatecard_button" />
+
+    </RelativeLayout>
+
+</ScrollView>
+

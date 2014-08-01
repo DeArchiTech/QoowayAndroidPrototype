@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/noVouchersView"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+	    	    
+    	<TextView
+    	    android:paddingTop="14dp"
+    	    android:paddingBottom="14dp"
+			android:background="#58595B"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+			android:textColor="@color/SearchGrey"
+			android:gravity="center"
+    	    android:text="@string/my_v"
+    	    android:textAppearance="?android:attr/textAppearanceSmall" />00
+    	
+    	 <TextView
+    	    android:paddingTop="28dp"
+    	    android:paddingBottom="28dp"
+    	    android:background="@color/White"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+			android:gravity="center"
+    	    android:text="@string/no_v"
+            android:textSize="12dp" />
+        
+    </LinearLayout>
+    
+
+
+
+       

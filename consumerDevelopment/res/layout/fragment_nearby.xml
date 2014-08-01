@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/Grey"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/tab_search_merchant_button_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/search_merchant_button"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@color/Red"
+            android:gravity="center"
+            android:text="@string/tap_to_serach_for_merchant"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/White" />
+    </LinearLayout>
+    
+
+    <!--
+    BE PROACTIVE
+    <TextView
+         android:id="@+id/nearby_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/Red"
+        android:gravity="center"
+        android:text="@string/tap_to_serach_for_merchant"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/White" />a
+    -->
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/tab_search_merchant_button_view"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:background="@color/Grey"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Grey"
+            android:divider="@color/Grey"
+            android:dividerHeight="0dp"
+            android:listSelector="@android:color/transparent"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp" >
+        </ListView>
+        
+    </LinearLayout>
+    
+    <RelativeLayout
+       	android:id="@+id/dimView"
+       	android:layout_below="@+id/tab_search_merchant_button_view"
+       	android:layout_width="match_parent"
+       	android:layout_height="match_parent"
+       	android:background="@color/Black"
+       	android:alpha="0.63"
+       	android:visibility="invisible" />
+
+</RelativeLayout>
+
+<!--
+         <Button
+         android:id="@+id/tab_search_merchant_button"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/Red"
+        android:gravity="center"
+        android:text="@string/tap_to_serach_for_merchant"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/White" />
+-->

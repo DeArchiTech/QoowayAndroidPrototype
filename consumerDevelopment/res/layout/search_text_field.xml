@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_text_view_parent"
+    android:layout_width="fill_parent"
+            android:layout_height="50dp"
+    android:background="@color/CharcoalGrey"
+    android:orientation="vertical"
+    android:paddingBottom="0dp" >
+
+    <!-- Editext for Search -->
+
+    <EditText
+        android:id="@+id/inputSearchBar"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_corners"
+        android:drawableLeft="@drawable/search_inactive"
+        android:drawablePadding="5dp"
+        android:hint="@string/search_merchant_message"
+        android:imeOptions="actionDone"
+        android:inputType="textVisiblePassword"
+        android:paddingLeft="8dp"
+        android:singleLine="true"
+        android:textColor="@color/Black" />
+
+</LinearLayout>

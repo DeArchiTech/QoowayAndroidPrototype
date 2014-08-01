@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:textColor="@color/White">
+ 
+    <item android:id="@+id/information"
+          android:title="@string/information"
+          android:icon="@drawable/information"
+          android:showAsAction="always"
+   		  android:textColor="@color/White"
+      />
+    
+    
+    <item android:id="@+id/done_button"
+        android:title="@string/done_button"
+        android:icon="@drawable/search_done_button"
+        android:showAsAction="always"
+        android:textColor="@color/White" />
+    
+    <item android:id="@+id/join_button"
+        android:title="@string/done_button"
+        android:icon="@drawable/sign_up_join_button"
+        android:showAsAction="always"
+        android:textColor="@color/White" />        
+    
+    
+    <item android:id="@+id/logout_button"
+        android:title="@string/logout"
+        android:showAsAction="always"
+        android:textColor="@color/White" />
+    
+    
+    
+    
+    
+    
+
+      
+
+
+</menu>
+              

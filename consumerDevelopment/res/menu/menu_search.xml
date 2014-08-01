@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+ 
+  
+
+</menu>
+
+
+<!-- 
+    <item android:id="@+id/search"
+          android:title="@string/search"
+          android:icon="@drawable/advsearch_done_button"
+          android:showAsAction="always"
+   		  android:textColor="@color/White"
+      />  
+
+ -->

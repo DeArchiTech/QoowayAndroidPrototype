@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/merchatnListLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drop_shadow_shape"
+        android:orientation="horizontal" 
+        android:padding="17dp">
+
+        <!-- ListRow Left side Thumbnail image -->
+
+        <LinearLayout
+            android:layout_marginRight="9dp"
+            android:id="@+id/thumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+             >
+
+            <ImageView
+                android:contentDescription="@string/desc"    
+                android:id="@+id/list_image"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:src="@drawable/logo_placeholder"  />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/middleLayout"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/thumbnail"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/shopName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/one"
+                android:textColor="@color/Black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dip"
+                android:text="@string/one"
+                android:textColor="@color/DarkGrey"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/promotion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dip"
+                android:text="@string/nine"
+                android:textColor="@color/Red"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Title Of Song -->
+
+
+        <!-- Rightend Duration -->
+
+
+
+</RelativeLayout>

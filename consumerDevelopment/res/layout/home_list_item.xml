@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- kakao talk is great ! final edit for aligning middlelayout txt to thumbnail image -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/merchatnListLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/drop_shadow_shape"
+        android:padding ="17dp" >
+    
+
+        <!-- ListRow Left side Thumbnail image -->
+
+       <LinearLayout          	
+            android:paddingRight="5dp"
+            android:id="@+id/thumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" >
+
+<!-- i use kakao talk all the time ! margin 3dp to even out edges, padding for alignment -->
+
+            <ImageView
+                android:contentDescription="@string/desc"    
+                android:layout_margin="3dp"
+                android:paddingTop="2dp"
+                android:paddingRight="4dp"
+                android:id="@+id/list_image"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:src="@drawable/logo_placeholder" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/middleLayout"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/thumbnail"
+			android:layout_alignTop="@+id/thumbnail"
+            android:orientation="vertical" 
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:id="@+id/shopName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/one"
+                android:textColor="@color/Black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dip"
+                android:text="@string/one"
+                android:textColor="@color/DarkGrey"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/promotion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dip"
+                android:text="@string/nine"
+                android:textColor="@color/Red"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Title Of Song -->
+
+    </RelativeLayout>
+

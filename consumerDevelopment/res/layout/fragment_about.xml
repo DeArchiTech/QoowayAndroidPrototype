@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="@color/BackGroundGrey"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/about_one_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/drop_shadow_shape"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/about_one_box"
+                android:layout_width="fill_parent"
+                android:layout_height="75dp"
+                android:background="@color/White"
+                android:text="@string/instant_qooway_deal"
+                android:textSize="15dp" >
+
+                <TextView
+                    android:id="@+id/first_box_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/what_is_Qooway_title"
+                    android:textColor="@color/DarkGrey"
+                    android:textSize="17dp" />
+
+                <ImageView
+                    android:id="@+id/first_arrow"
+                    android:layout_width="9dip"
+                    android:layout_height="15dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/greyarrow"
+                    android:contentDescription="@string/desc" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/about_two_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/drop_shadow_shape"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/about_two_box"
+                android:layout_width="fill_parent"
+                android:layout_height="75dp"
+                android:background="@color/White"
+                android:text="@string/instant_qooway_deal"
+                android:textSize="15dp" >
+
+                <TextView
+                    android:id="@+id/second_box_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/how_do_I_get_instant_deals_title"
+                    android:textColor="@color/DarkGrey"
+                    android:textSize="17dp" />
+
+                <ImageView
+                    android:id="@+id/second_arrow"
+                    android:layout_width="9dip"
+                    android:layout_height="15dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/greyarrow"
+                    android:contentDescription="@string/desc" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/about_three_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/drop_shadow_shape"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/about_three_box"
+                android:layout_width="fill_parent"
+                android:layout_height="75dp"
+                android:background="@color/White"
+                android:text="@string/instant_qooway_deal"
+                android:textSize="15dp" >
+                
+                <!-- changed padding on third box otherwise too fat kakao -->
+
+                <TextView
+                    android:id="@+id/third_box_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/how_do_I_redeem_Qoopoints_title"
+                    android:textColor="@color/DarkGrey"
+                    android:textSize="17dp"
+                    android:paddingLeft="35dp"
+                    android:paddingRight="35dp"
+                    android:gravity="center" />
+
+                <ImageView
+                    android:id="@+id/third_arrow"
+                    android:layout_width="9dip"
+                    android:layout_height="15dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/greyarrow"
+                    android:contentDescription="@string/desc" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- kakaooooooo adjusted bottom (c)text -->
+
+    <TextView
+        android:id="@+id/copy_right_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:text="@string/version_text"
+        android:textColor="@color/DarkGrey"
+        android:textSize="15dp" />
+
+</RelativeLayout>

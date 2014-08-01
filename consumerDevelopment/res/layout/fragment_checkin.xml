@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+    android:id="@+id/check_in_textview"     
+	android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Red"        
+    android:text="@string/check_in_message"    
+    android:textColor="@color/White"
+    android:padding="10dp"
+    android:textAppearance="?android:attr/textAppearanceSmall"
+    />
+
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/CharcoalGrey"
+    android:orientation="vertical" 
+    android:paddingBottom="0dp"
+    >
+	
+        <!-- Editext for Search -->
+    <EditText android:id="@+id/inputSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/search_merchant_message"
+        android:inputType="textVisiblePassword"
+        android:background="@drawable/rounded_corners"
+        android:layout_margin="10dp"
+        android:textColor="@color/Black"
+        android:drawableLeft="@drawable/search_inactive"
+        android:drawablePadding="5dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:singleLine="true"
+        android:imeOptions="actionDone"   
+        style="@android:style/TextAppearance.Medium"
+        />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:background="@color/SearchGrey"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/SearchGrey"
+            android:divider="@color/Grey"
+            android:dividerHeight="0dp" 
+            android:listSelector="@android:color/transparent"
+            >
+        </ListView>
+    </LinearLayout>  
+    
+    
+    
+</LinearLayout>

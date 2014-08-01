@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Qooway</string>
+    <string name="Logout_Dialog">Are you sure you would like to logout?</string>
+    <string name="search_bar_title">This is your search result:</string>
+    <string name="Login">Login</string>
+    <string name="food">Food \u0026 Drink</string>
+    <string name="health">Health \u0026 Beauty</string>
+    <string name="cuisine">Please mark your selection(s)</string>
+    <string name="Advanced">Advanced</string>
+    <string name="SortBy">Sort By</string>
+    <string name="test"></string>
+    <string name="information"></string>
+    <string name="done_button"></string>
+    <string name="middleTextInformation">1. Show up at the merchant.\n2. During payment, let them know that you have a voucher.\n3. Claim it through the app or show your Qooway card.</string>
+    <string name="filter_search">Filter your search by:</string>
+    <string name="bottomTextInformation">That\'s it! \nDuring payment, your voucher will be detected automatically.</string>
+    <string name="favorite_dialog">Are you sure you would \nlike to delete this favorite?</string>
+    <string name="redeem_dialog">Would you like to redeem 1000 QooPoints\nfor this voucher?</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="search_title">Search</string>
+    <string name="query_hint">Start searching now&#8230;</string>
+    <string name="log_in_prompt">Please log in to proceeed.</string>
+    <string name="sign_in_activate"><u>Sign in/Activate</u></string>
+    <string name="action_login">login</string>
+    <string name="action_home">home</string>
+    <string name="action_search">search</string>
+    <string name="action_category">category</string>
+    <string name="action_more">more</string>
+    <string name="sign_up">Sign up to start getting deals here! Its free</string>
+    <string name="voucher_redeem_message">To redeem vouchers, you must have 1000 QooPoints.
+Start earning QooPoints today by dining and shopping
+at Qooway Merchants.</string>
+    <string name="check_in_message">Check-in to let our Qooway Merchant know that you\'re there! It makes getting your instant deal, stamps and/or QooPoints convient and easy!</string>
+    <string name="check_in_process_message01">Simply tap the grey check\nand wait to be verified!</string>
+    <string name="anonymous">Anonymous</string>
+    <string name="search_merchant_message">Search Merchant Listings</string>
+    <string name="step1">You may search for merchants by inputting your terms above or search by filters below.\n\nPlease select one of the following categories below to make on advanced search for:</string>
+    <string name="step1message">Select your search type</string>
+    <string name="step2"><b>Step 2</b> What type of merchants are you seeking?</string>
+    <string name="step2message">What type of merchants are you seeking?</string>
+    <string name="qooway_num_message"><b>Qooway Card Number:</b></string>
+    <string name="vouchers_message"><b>My Vouchers</b></string>
+    <string name="qoopoints_message"><b>QooPoints History</b></string>
+    <string name="review_instruction">Please rate the merchant. Your review may be removed if it contains inappropriate content or violates our terms and conditions.</string>
+    <string name="comments">Comments</string>
+    <string name="text_count">0/2000</string>
+    <string name="sixteen_digit"><b>16 digit card code</b></string>
+    <string name="email"><b>Email</b></string>
+    <string name="password"><b>Password</b></string>
+    <string name="confirm_password"><b>Confirm Password</b></string>
+    <string name="address"><b>Address</b></string>
+    <string name="city"><b>City</b></string>
+    <string name="country"><b>Country</b></string>
+    <string name="province"><b>Province/State</b></string>
+    <string name="postal"><b>Postal Code</b></string>
+    <string name="term">Qooway terms of use.</string>
+    <string name="jointext1">Please provide a legitimate mailing address for us to mail your Qooway membership card to.</string>
+    <string name="jointext2">By signing up for a Qooway Rewards Membership,</string>
+    <string name="jointext3">you agree to abide by Qooway\'s </string>
+    <string name="jointext4">Terms of Use.</string>
+    <string name="checktext1">Yes, I want to receive Email notifications.</string>
+    <string name="checktext2">Yes, I want to receive a physical Qooway membership card</string>
+    <string name="first_name"><b>First Name</b></string>
+    <string name="last_name"><b>Last Name</b></string>
+    <string name="gender">Gender</string>
+    <string name="age_group">Age Group</string>
+    <string name="reference">Reference</string>
+    <string name="read">Read</string>
+    <string name="num">0</string>
+    <string name="qooway_m">Qooway Members\nhave checked in here.</string>
+    <string name="check">Check In</string>
+    <string name="one">1234</string>
+    <string name="nine">99887</string>
+    <string name="text">TextView</string>
+    <string name="phone">Phone: </string>
+    <string name="web">Website: </string>
+    <string name="hour">Hours of Operation</string>
+    <string name="store_h">Store Hours Details</string>
+    <string name="store_c">Miscellaneous</string>
+    <string name="store_d">Store Hours Details</string>
+    <string name="ai">Additional Information</string>
+    <string name="aid">Additional Information Details</string>
+    <string name="no">There are no reviews yet! Be the first!</string>
+    <string name="my_v">My Vouchers</string>
+    <string name="v_h">Voucher goes here.</string>
+    <string name="no_v">You have no vouchers at this time.</string>
+    <string name="tap">Please tap to claim deal at:</string>
+    <string name="checkin_with_number">At time of payment, tell your server or\ncashier your # and name.</string>
+    <string name="cancel_checkin">Cancel Claim</string>
+    <string name="r_name">Restaurant Name</string>
+    <string name="wait">Waiting for verification from</string>
+    <string name="your_c">Your claim has been verified.</string>
+    <string name="your_new">Your new QooPoints total is:</string>
+    <string name="n_qoo">XXXX QooPoints</string>
+    <string name="s_tap">Simply tap the grey check</string>
+    <string name="and_wait">and wait to be verified</string>
+    <string name="please">Please enter your email address\nto reset your password</string>
+    <string name="no_re">You have not made a review.</string>
+    <string name="no_favourites">You have not favourited any merchants.</string>
+    <string name="please_tap">Please tap to check-in at</string>
+    <string name="please_tap2">Please tap to check in at:\nRestaurant Name</string>
+    <string name="you_q">You Currently have: N/A QooPoints</string>
+    <string name="q">QooPoints</string>
+    <string name="r">Redemption</string>
+    <string name="onet">1000</string>
+    <string name="food_v">$10 Food Voucher</string>
+    <string name="av">Available: 0</string>
+    <string name="foo">Food</string>
+    <string name="service">Service</string>
+    <string name="amb">Ambience</string>
+    <string name="tap2">Tap here to write a comment.</string>
+    <string name="h">H</string>
+    <string name="avail">Available</string>
+    <string name="date">Date</string>
+    <string name="rc">Restaurant reviewed by: Customer</string>
+    <string name="rt">The review text</string>
+    <string name="food2">Food: </string>
+    <string name="s2">Service: </string>
+    <string name="a2">Ambience: </string>
+    <string name="qt">Qty:</string>
+    <string name="waitgps">Wait for GPS</string>
+    <string name="five">5:45</string>
+    <string name="login_message_merchant">You must be logged in to write a review</string>
+    <string name="login_message_checkin">You must be logged in to cleam deal.</string>
+    <string name="check_decline">Your Check In Request has been declined</string>
+    <string name="check_approve">Your Check In Request has been accepted</string>
+    <string name="search">Search</string>
+    <string name="logout">Log Out</string>
+    <string name="yes">Yes</string>
+    <string name ="op_title">Oops...</string>
+	<string name="no_voucher">This merchant has nothing for redemption at this time.</string>
+    <string name="no_message">No</string>
+    <string name="ok">OK</string>
+    <string name="server_error">Attention</string>
+    <string name="voucher_title">Voucher</string>
+    <string name="voucher_error">You do not have enough Qoopoints</string>
+    <string name="gallery_title">Gallery</string>
+    <string name="gallery_message">Merchant Gallery coming soon!</string>
+    <string name="reply_text">The reply text</string>
+    <string name="search_result_empty">No results found</string>
+    <string name="log_in">Log In</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="click_here">Click Here</string>
+    <string name="search_error">Search</string>
+    <string name="no_search_results">No results found</string>
+    <string name="empty"></string>
+    <string name="desc">desc</string>
+    <string name="tap_to_serach_for_merchant">Tap here to search</string>
+    <string name="instant_qooway_deal">Claim Deal Now!</string>
+    <string name="reddeem_points_">Redeem Points</string>
+    <string name="write_a_review_button">Write a Review</string>
+    <string name="Your_Num">Your number is</string>
+    <string name="you_have">You have enough QooPoints to \nredeem for a gift voucher!</string>
+    <string name="enable_location_services">Would you like to enable location services?</string>
+    <string name="what_is_Qooway_title">What is Qooway?</string>
+    <string name="how_do_I_get_instant_deals_title">How do I get instant deals?</string>
+    <string name="how_do_I_redeem_Qoopoints_title">What do I do with QooPoints \nand how do I redeem them?</string>
+    <string name="what_is_Qooway_text1">Qooway gets you free access to instant savings and deals at local restaurants and retailers. Sign up for free and start discovering merchants and deals! Claim deals and earn QooPoints right from the Qooway app or show your Qooway card at merchants during payment. Register or log in to get started.</string>
+    <string name="what_is_Qooway_text2">You can also save your favourite restaurants or stores and write reviews about them.</string>
+    <string name="what_is_Qooway_text3">We are steadily coming up with various ways to create a better experience for diners, shoppers and businesses alike. From helping businesses with their loyalty needs to optimizing their waitlists and orders, we are continually thinking of features to enhance the dynamics in the restaurant and retail industry.</string>
+    <string name="how_do_I_get_instant_deals_text1">Visit Qooway merchants to get instant deals and or earn QooPoints. At time of payment, show your Qooway card or go to the Qooway App:</string>
+    <string name="how_do_I_get_instant_deals_text2">1. Select the merchant you are currently at, then press the “Claim Deal Now” button\n2. Let the server or cashier know you\’ve claimed your deal through the Qooway App\n3. Show the server or cashier your claim number for verification</string>
+    <string name="how_do_I_redeem_Qoopoints_text1">Click “Redeem Points” in the Menu and see what\’s available! Or select a merchant directly and click “Redeem Points”. Every 1000 QooPoints gets you a $10 gift voucher to use on your next visit. Just show your Qooway card or claim a deal through the app during payment next time!</string>
+    <string name="how_do_I_redeem_Qoopoints_text2">Visit the Qooway merchant and at time of payment, let the server or cashier know you have a $10 Qooway voucher to use. Your paperless voucher will automatically be detected and applied to your bill.</string>
+    <string name="version_text">Version 1.4 © 2014 Qooway Online Inc.\nAll Rights Reserved</string>
+    <string name="want_instant_deals_title">Want instant deals and discounts?</string>
+    <string name="want_instant_deals_text">Sign up today for a free membership and start claiming instant deals near you!</string>
+    <string name="got_a_qooway_rewards_title">Got a Qooway Rewards Card already?</string>
+    <string name="got_a_qooway_rewards_text">If you received one from your friends or from a merchant, please activate your card below.</string>
+    <string name="sixteen_digit_card">Please input the 16-digit card number found on the back of your Qooway Rewards Card</string>
+    <string name="how_did_you_hear">How did you hear about us?</string>
+
+    <string-array name="logout_menu_item">
+        <item>Login</item>
+        <item>Sign Up</item>
+        <item>New</item>
+        <item>Nearby</item>
+        <item>Search</item>
+        <item>Redeem Points</item>
+        <item>About</item>
+    </string-array>
+    <string-array name="logout_menu_item_image_name">
+        <item>menu_login</item>
+        <item>sign_up_inactive</item>
+        <item>menu_new_inactive</item>
+        <item>nearby_inactive</item>
+        <item>search_inactive</item>
+        <item>menu_redeem_my_points</item>
+        <item>about</item>
+    </string-array>
+    <string-array name="menu_item">
+        <item>My Account</item>
+        <!--
+TAKE OUT FOR CHECKIN
+        <item>Check In</item>-->
+        <item>Favourites</item>
+        <item>New</item>
+        <item>Nearby</item>
+        <item>Search</item>
+        <item>Redeem Points</item>
+        <item>My Reviews</item>
+        <item>About</item>
+    </string-array>
+    <string-array name="addtional_Fragments">
+        <item>Error</item>
+        <item>RestaurantBasic</item>
+        <item>RetailBasic</item>
+        <item>MerchantCategory</item>
+        <item>MyAccount</item>
+        <item>Map</item>
+        <item>MyVouchers</item>
+        <item>QooPointsHistory</item>
+        <item>WriteReview</item>
+        <item>Error</item>
+    </string-array>
+    <string-array name="menu_item_image_name">
+        <item>menu_login</item>
+        <!--
+TAKE OUT FOR CHECKIN
+        <item>menu_checkins</item>
+        -->
+        <item>menu_favourite</item>
+        <item>menu_new_inactive</item>
+        <item>nearby_inactive</item>
+        <item>search_inactive</item>
+        <item>menu_redeem_my_points</item>
+        <item>reviews_inactive</item>
+        <item>about</item>
+    </string-array>
+    <string-array name="merchant_xml">
+        <item>Address</item>
+        <item>City</item>
+        <item>Id</item>
+        <item>Latitude</item>
+        <item>Longitude</item>
+        <item>Name</item>
+        <item>OpenCloseString</item>
+        <item>Phone</item>
+        <item>PostalCode</item>
+        <item>Pronvice</item>
+        <item>StoreID</item>
+        <item>StorePicturePath</item>
+        <item>Address</item>
+        <item>AreaCode</item>
+        <item>City</item>
+        <item>Abbotsford</item>
+        <item>Canada</item>
+        <item>Id</item>
+        <item>Latitude</item>
+        <item>LogoPath</item>
+        <item>Longitude</item>
+        <item>MenuLink</item>
+        <item>Name</item>
+        <item>Neighborhood</item>
+        <item>PayOption</item>
+        <item>Phone</item>
+        <item>PostalCode</item>
+        <item>Province</item>
+        <item>Region</item>
+        <item>SpecialOffer</item>
+        <item>StoreID</item>
+        <item>Website</item>
+    </string-array>
+    <string-array name="gender_array">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="age_array">
+        <item>Age Group</item>
+        <item>Under 19</item>
+        <item>19 to 29</item>
+        <item>30 to 39</item>
+        <item>40 to 49</item>
+        <item>50 to 64</item>
+        <item>65 or Over</item>
+    </string-array>
+    <string-array name="reference_array">
+        <item>Reference</item>
+        <item>AM1320</item>
+        <item>AM1470</item>
+        <item>Business Association</item>
+        <item>Canada Line Station</item>
+        <item>Facebook</item>
+        <item>Twitter</item>
+        <item>Forum</item>
+        <item>Word of Mouth</item>
+        <item>Lions Club</item>
+        <item>What\'s In Magazine</item>
+        <item>Richmond Night Market</item>
+        <item>Student Association</item>
+        <item>Foodoir Magazine</item>
+        <item>FM96.1111</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="province_array">
+        <item>BC</item>
+        <item>Alberta</item>
+        <item>Saskatchewan</item>
+        <item>Manitoba</item>
+        <item>Ontario</item>
+        <item>Quebec</item>
+        <item>New Brunswick</item>
+        <item>Nova Scotia</item>
+        <item>PEI</item>
+        <item>Newfoundland</item>
+        <item>Yukon</item>
+        <item>Northwest Territories</item>
+        <item>Nunavut</item>
+        <item>Alabama</item>
+        <item>Alaska</item>
+        <item>American Samoa</item>
+        <item>Arizona</item>
+        <item>Arkansas</item>
+        <item>California</item>
+        <item>Colorado</item>
+        <item>Connecticut</item>
+        <item>Delaware</item>
+        <item>District of Columbia</item>
+        <item>Florida</item>
+        <item>Georgia</item>
+        <item>Guam</item>
+        <item>Hawaii</item>
+        <item>Idaho</item>
+        <item>Illinois</item>
+        <item>Indiana</item>
+        <item>Iowa</item>
+        <item>Kansas</item>
+        <item>Kentucky</item>
+        <item>Louisiana</item>
+        <item>Maine</item>
+        <item>Maryland</item>
+        <item>Massachusetts</item>
+        <item>Michigan</item>
+        <item>Minnesota</item>
+        <item>Mississippi</item>
+        <item>Missouri</item>
+        <item>Montana</item>
+        <item>Nebraska</item>
+        <item>Nevada</item>
+        <item>New Hampshire</item>
+        <item>New Jersey</item>
+        <item>New Mexico</item>
+        <item>New York</item>
+        <item>North Carolina</item>
+        <item>North Dakota</item>
+        <item>Northern Marianas Islands</item>
+        <item>Ohio</item>
+        <item>Oklahoma</item>
+        <item>Oregon</item>
+        <item>Pennsylvania</item>
+        <item>Puerto Rico</item>
+        <item>Rhode Island</item>
+        <item>South Carolina</item>
+        <item>South Dakota</item>
+        <item>Tennessee</item>
+        <item>Texas</item>
+        <item>Utah</item>
+        <item>Vermont</item>
+        <item>Virginia</item>
+        <item>Virgin Islands</item>
+        <item>Washington</item>
+        <item>West Virginia</item>
+        <item>Wisconsin</item>
+        <item>Wyoming</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="country_array">
+        <item>Canada</item>
+        <item>United States</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="checkin_response">
+        <item>Wrong Token</item>
+        <item>Pending Request</item>
+        <item>Exceeded the number cancel request allowed at this merchant, please check in later</item>
+        <item>Exceeded the number pending requests that are allowed at this moment</item>
+        <item>Exceeded number of checkIns for the past 3 hours</item>
+    </string-array>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+
+</resources> <!--  -->

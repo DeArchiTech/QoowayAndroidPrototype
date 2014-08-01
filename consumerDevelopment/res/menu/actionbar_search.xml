@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_gravity="fill_horizontal"
+android:orientation="horizontal"
+android:background="@color/Black">
+
+<TextView
+    android:layout_alignParentRight="true"
+    android:text="@string/search"
+    android:id="@+id/search"
+	android:layout_centerVertical="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="@android:style/TextAppearance.Large"
+    android:paddingRight="5dp"
+    android:textStyle="bold"
+    android:textColor="@color/White"/>
+
+<ImageView
+    android:id="@+id/back"
+    android:layout_centerVertical="true"
+    android:contentDescription="@string/desc"
+    android:layout_alignParentLeft="true"
+    android:layout_width="wrap_content"
+    android:gravity="right"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:src="@drawable/back_icon"
+    android:paddingLeft="0dp"/> 
+</RelativeLayout>
+
+<!-- 
+        ActionBar mActionBar = getActionBar();
+        mActionBar.setDisplayShowHomeEnabled(false);
+        mActionBar.setDisplayShowTitleEnabled(false);
+        mActionBar.setDisplayShowHomeEnabled(false);
+        mActionBar.setDisplayUseLogoEnabled(false);
+        LayoutInflater mInflater = LayoutInflater.from(this);
+        View mActionView = mInflater.inflate(R.layout.actionbar_search, null);
+
+        ImageView backView = (ImageView) mActionView.findViewById(R.id.back);
+        backView.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+            	finish();
+            }
+        });
+        
+        TextView mTitleTextView = (TextView) mActionView.findViewById(R.id.search);
+        mTitleTextView.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+  	    	  View testView = new View (context);
+
+  	  		if(whichSearchChosen.equals("Restaurant")){
+  	  			//SearchRestaurantButton(testView);
+  			}
+  	  		else if(whichSearchChosen.equals("Retail")){
+  				searchRetailClicked(testView);
+
+  			}	 
+            }
+        });
+        
+        mActionBar.setCustomView(mActionView);
+        mActionBar.setDisplayShowCustomEnabled(true);
+
+ -->

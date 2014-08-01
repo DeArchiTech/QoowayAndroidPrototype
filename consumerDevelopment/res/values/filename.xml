@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="position">1</integer>
+    <integer name="StoreID">2</integer>
+    <integer name="textView">3</integer>
+    <integer name="listView">4</integer>
+    <integer name="activity">5</integer>
+    
+    
+    <integer name="firstItem">1</integer>
+    <integer name="layout">2</integer>
+    <integer name="footer_layout">2</integer>
+    <integer name="actual_position">8</integer>
+</resources>

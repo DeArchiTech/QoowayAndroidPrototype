@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/drop_shadow_shape"
+    android:orientation="vertical"
+    android:padding="5dp" 
+    android:layout_margin="5dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="5dp" 
+		>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" 
+            android:layout_centerVertical="true"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="10dp"
+            >
+
+
+            <ImageView
+                android:contentDescription="@string/desc"    
+                android:layout_marginLeft="10dp"
+    			android:layout_marginRight="5dp"
+                android:id="@+id/imageView16"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/reviews_grey_star" />
+
+            <ImageView
+                android:contentDescription="@string/desc"    
+                android:layout_marginLeft="5dp"
+    			android:layout_marginRight="5dp"
+                android:id="@+id/imageView17"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/reviews_grey_star" />
+
+            <ImageView
+                android:contentDescription="@string/desc"    
+                android:layout_marginLeft="5dp"
+    			android:layout_marginRight="5dp"
+                android:id="@+id/imageView18"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/reviews_grey_star" />
+
+            <ImageView
+                android:contentDescription="@string/desc"    
+                android:layout_marginLeft="5dp"
+    			android:layout_marginRight="5dp"
+                android:id="@+id/imageView19"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/reviews_grey_star" />
+
+            <ImageView
+                android:contentDescription="@string/desc"    
+                android:layout_marginLeft="5dp"
+    			android:layout_marginRight="0dp"
+                android:id="@+id/imageView20"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/reviews_grey_star" />
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/ReviewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:textColor="#6D6E71"
+             />
+     
+    </RelativeLayout>
+    
+    <View
+    	android:layout_width="fill_parent"
+    	android:layout_height="1dp"
+    	android:background="@color/Grey"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:padding="10dp"
+        >
+
+        <!-- kakao talk is love kakao talk is life
+        	 only modified color of text/restaurantname -->
+        	 
+		<TextView
+            android:id="@+id/RestaurantName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/r_name"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/DarkGrey" 
+            android:textStyle="bold"
+            />
+		
+        <TextView
+            android:id="@+id/ReviewerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rc"
+            android:textAppearance="?android:attr/textAppearanceSmall" 
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/ReviewText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rt"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+    
+    <View
+    	android:layout_width="fill_parent"
+    	android:layout_height="1dp"
+    	android:background="@color/Grey"/>
+
+    <RelativeLayout
+        android:id="@+id/ReviewAddDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView6"
+            android:layout_alignRight="@+id/textView6"
+            android:text="@string/food2"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_alignRight="@+id/textView6"
+            android:layout_below="@+id/textView4"
+            android:text="@string/s2"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a2"
+            android:layout_below="@+id/textView5"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold" />
+
+        <LinearLayout
+     		android:id="@+id/foodLinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView4"
+            android:layout_toRightOf="@+id/textView4"
+            android:layout_marginLeft="5dp"
+            >
+
+            <ImageView
+                android:contentDescription="@string/desc"    
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0dp"
+                android:src="@drawable/reviews_grey_star" />
+
+            <ImageView
+                android:contentDescription="@string/desc"    
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/reviews_grey_star" />
+
+            <ImageView
+                android:contentDescription="@string/desc"    
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/reviews_grey_star" />
+
+            <ImageView
+                android:contentDescription="@string/desc"    
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/reviews_grey_star" />
+
+            <ImageView
+                android:contentDescription="@string/desc"    
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/reviews_grey_star" />
+        </LinearLayout>        
+        
+        <LinearLayout
+        
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView5"
+            android:layout_toRightOf="@+id/textView5" >
+
+            <ImageView
+                android:contentDescription="@string/desc"    
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/reviews_grey_star"
+                />
+
+            <ImageView
+                android:contentDescription="@string/desc"    
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/reviews_grey_star" />
+
+            <ImageView
+                android:contentDescription="@string/desc"    
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/reviews_grey_star" />
+
+            <ImageView
+                android:contentDescription="@string/desc"    
+                android:id="@+id/imageView9"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/reviews_grey_star" />
+
+            <ImageView
+                android:contentDescription="@string/desc"    
+                android:id="@+id/imageView10"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/reviews_grey_star" />
+        </LinearLayout>
+
+        <LinearLayout
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView6"
+            android:layout_toRightOf="@+id/textView6"
+            android:layout_marginBottom="2dp" >
+
+            <ImageView
+                android:contentDescription="@string/desc"    
+                android:id="@+id/imageView11"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/reviews_grey_star"
+                />
+
+            <ImageView
+                android:contentDescription="@string/desc"    
+                android:id="@+id/imageView12"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/reviews_grey_star" />
+
+            <ImageView
+                android:contentDescription="@string/desc"    
+                android:id="@+id/imageView13"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/reviews_grey_star" />
+
+            <ImageView
+                android:contentDescription="@string/desc"    
+                android:id="@+id/imageView14"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/reviews_grey_star" />
+
+            <ImageView
+                android:contentDescription="@string/desc"    
+                android:id="@+id/imageView15"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/reviews_grey_star" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

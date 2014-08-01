@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/LightGrey">
+    
+    <!-- kakao kakao kakao took out onclick - to merchant
+    took out # available vouchers + centered text in vouchers box -->
+
+      <TextView
+         android:id="@+id/voucher_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/Red"
+        android:gravity="center"
+        android:text="@string/you_q"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/White" />
+
+     <RelativeLayout 
+        android:padding="17dp"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="0dp"
+	    android:layout_marginRight="5dp"
+	    android:layout_marginLeft="5dp"
+	    android:orientation="vertical"
+    	android:background="@drawable/drop_shadow_shape_redeem1">
+    	
+        <ImageView
+            android:id="@+id/restaurantLogo"
+        	android:layout_width="50dip"
+            android:layout_height="50dp"
+	    	android:layout_marginRight="9dp"
+	    	android:src="@drawable/restaurant_logo"
+	    	android:layout_centerVertical="true"
+	    	android:contentDescription="@string/desc"/>
+       
+        
+	<!--	 <ImageView
+		     android:id="@+id/redeemArrow1"
+		     android:layout_width="30dp"
+		     android:layout_height="30dp"
+		     android:layout_alignParentRight="true"
+		     android:layout_centerVertical="true"
+		     android:contentDescription="@string/desc"
+		     android:src="@drawable/icon_advanced_next"
+		     android:layout_marginRight="5dp"
+		     /> -->
+
+		 <TextView
+		     android:id="@+id/TextView"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:layout_centerVertical="true"
+		     android:layout_marginRight="5dp"
+		     android:layout_toRightOf="@+id/restaurantLogo"
+		     android:text="@string/r_name"
+		     android:textAppearance="?android:attr/textAppearanceSmall"
+		     android:textStyle="bold" />
+		     
+   	</RelativeLayout>     
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal" 
+        android:background="@drawable/drop_shadow_shape_redeem1">
+
+        <TextView
+            android:id="@+id/qooPointText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/DarkGrey"
+            android:padding="10dp"
+            android:text="@string/q"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/White" />
+
+        <TextView
+            android:id="@+id/redeemText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/qooPointText"
+            android:background="@color/DarkGrey"
+            android:padding="10dp"
+            android:text="@string/r"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/White" />
+
+        <TextView
+            android:id="@+id/oneText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/vInfo"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@id/qooPointText"
+            android:layout_alignTop="@id/vInfo"
+            android:layout_below="@id/qooPointText"
+            android:background="@drawable/right_side_edge_white"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/onet"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/DarkGrey" />
+
+        <RelativeLayout
+            android:id="@+id/vInfo"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignLeft="@+id/redeemText"
+            android:layout_below="@+id/redeemText"
+            android:background="@color/White"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/vText"
+         		android:layout_alignTop="@+id/imageView1"
+         		android:layout_alignBottom="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/food_v"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/DarkGrey" 
+                />
+            
+            <ImageView
+                android:contentDescription="@string/desc"    
+                android:id="@+id/imageView1"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/redeemmypoints_redeem" />
+            
+     <!--  	<TextView
+                android:id="@+id/vLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/vText"
+                android:text="@string/av" 
+                android:textSize="12sp"
+                android:textColor="@color/Red" /> -->
+        </RelativeLayout>
+
+        <ImageView
+            android:contentDescription="@string/desc"    
+            android:id="@+id/line_divider_top"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/oneText"
+            android:layout_alignRight="@+id/qooPointText"
+            android:layout_alignTop="@+id/qooPointText"
+            android:background="@color/White" />
+
+    </RelativeLayout>
+    
+</LinearLayout>
